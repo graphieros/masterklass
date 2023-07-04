@@ -1,26 +1,21 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
+<script setup>
+  import { ref } from 'vue';
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+  const masterklass = ref("masterKlass");
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
+
+<template>
+  <div>
+    > Hello {{ masterklass }} !
+  </div>
+</template>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html {
+  background: rgb(16, 16, 17);
+  color: rgb(111, 224, 135);
+  font-family: 'Courier New', Courier, monospace;
 }
 </style>
